@@ -1,6 +1,24 @@
+.page-center {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Centre horizontalement */
+  margin-top: 20px;         /* Espace avec le haut */
+}
+
+.page-center h1 {
+  text-align: center;
+  width: 100%;
+}
+
 .create-employee-container {
   max-width: 600px;
-  margin: auto;
+  width: 100%;
+}
+
+.create-employee-container h2 {
+  text-align: center;
 }
 
 .create-employee-form {
@@ -31,4 +49,21 @@
 
 .submit-button:hover {
   background-color: #2b6cb0;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+main > h1 {
+  text-align: center;
+  width: 100%;
 }
