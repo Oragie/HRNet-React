@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import CreateEmployee from "./pages/CreateEmployee";
-import EmployeeList from "./pages/EmployeeList";
+import CreateEmployee from "./pages/createEmployee";
+import EmployeeList from "./pages/employees/employeeList";
 import NotFound from "./pages/NotFound";
 
 function App() {
