@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import CreateEmployee from "./pages/createEmployee";
+import CreateEmployee from "./pages/createEmployee/createEmployee.jsx";
 import EmployeeList from "./pages/employees/employeeList";
-import NotFound from "./pages/NotFound";
+import NotFound from "./components/NotFound/index.jsx";
 
 function App() {
   return (

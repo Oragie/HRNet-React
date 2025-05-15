@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setEmployees } from "../features/employees/employeesSlice";
+import { setemployees } from "../features/employees/employeesSlice";
 
 export const useSyncWithLocalStorage = () => {
   const dispatch = useDispatch();
@@ -9,7 +9,7 @@ export const useSyncWithLocalStorage = () => {
   useEffect(() => {
     const saved = localStorage.getItem("employees");
     if (saved) {
-      dispatch(setEmployees(JSON.parse(saved)));
+      dispatch(setemployees(JSON.parse(saved)));
     }
   }, [dispatch]);
 

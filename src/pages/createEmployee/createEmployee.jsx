@@ -1,17 +1,14 @@
-// src/pages/CreateEmployee/CreateEmployee.jsx
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { addEmployee } from "../../features/employees/employeesSlice";
-import { useNavigate } from "react-router-dom";
 import { states } from "../../assets/states";
-import Modal from "../../components//Modal/Index";
+import Modal from "./../../components/Modal/index.jsx";
 import "./createEmployee.css";
 
 const CreateEmployee = () => {
   const { register, handleSubmit, reset } = useForm();
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
 
   const onSubmit = (data) => {
